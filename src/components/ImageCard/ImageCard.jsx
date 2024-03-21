@@ -5,9 +5,9 @@ const ImageCard = ({ alt, src, modalOpen }) => {
     return (
       <div
         className={css.hoverImageScale}
-        onClick={() => modalOpen(src.regular, alt)}
+        // onClick={() => modalOpen(src.regular, alt)}
       >
-        <img className={css.imageCard} src={src.small} alt={alt} />
+        <img className={css.imageCard} src={src.small} alt={alt} onClick={() => modalOpen(src.regular, alt)}/>
       </div>
     );
 }
